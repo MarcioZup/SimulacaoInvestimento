@@ -2,15 +2,15 @@ package br.com.zup.SimulacaoInvestimentos.dtos;
 
 public class InvestimentoDto {
 
-    private String nome;
+
     private String email;
+    private String nome;
     private String cpf;
     private double valorPrevisto;
     private int periodoDeAplicacaoMeses;
     private RiscoDto risco;
 
-    public InvestimentoDto() {
-    }
+
 
     public InvestimentoDto(String nome, String email, String cpf, double valorPrevisto, int periodoDeAplicacaoMeses, RiscoDto risco) {
         this.nome = nome;
