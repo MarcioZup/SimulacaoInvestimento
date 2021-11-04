@@ -1,6 +1,6 @@
 package br.com.zup.SimulacaoInvestimentos.dtos;
 
-public class Investidor {
+public class Investimento {
 
     private String nome;
     private String email;
