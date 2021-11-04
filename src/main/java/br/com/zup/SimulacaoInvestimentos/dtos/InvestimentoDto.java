@@ -1,11 +1,11 @@
 package br.com.zup.SimulacaoInvestimentos.dtos;
 
-public class Investimento {
+public class InvestimentoDto {
 
     private String nome;
     private String email;
     private String cpf;
     private double valorPrevisto;
     private int periodoDeAplicacaoMeses;
-    private Risco risco;
+    private RiscoDto nivelDoRisco;
 }
