@@ -7,4 +7,5 @@ public class Investimento {
     private String cpf;
     private double valorPrevisto;
     private int periodoDeAplicacaoMeses;
+    private Risco risco;
 }
