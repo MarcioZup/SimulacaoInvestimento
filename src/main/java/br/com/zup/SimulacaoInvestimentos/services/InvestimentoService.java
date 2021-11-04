@@ -12,11 +12,11 @@ public class InvestimentoService {
 
     private List<InvestimentoDto> investimentos = new ArrayList<>();
 
-   public RetornoInvestimentoDto calcularInvestimento(InvestimentoDto investimentoDto){
+
+
+    public RetornoInvestimentoDto calcularInvestimento(InvestimentoDto investimentoDto) {
         investimentos.add(investimentoDto);
-        double montante = investimentoDto.getValorPrevisto() * Math.pow(investimentoDto.getRisco(),investimentoDto.getPeriodoDeAplicacaoMeses() );
+        double montante = investimentoDto.getValorPrevisto() * Math.pow(investimentoDto.getRisco().getTaxaDeRetorno(),investimentoDto.getPeriodoDeAplicacaoMeses() );
         return new RetornoInvestimentoDto(investimentoDto.getValorPrevisto(),(montante - investimentoDto.getValorPrevisto()), montante);
-
-
     }
 }

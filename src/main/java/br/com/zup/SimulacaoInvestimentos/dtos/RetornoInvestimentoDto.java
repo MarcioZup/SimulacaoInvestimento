@@ -6,6 +6,9 @@ public class RetornoInvestimentoDto {
     private double valorTotalDoLucro;
     private double valorTotal;
 
+    public RetornoInvestimentoDto() {
+    }
+
     public RetornoInvestimentoDto(double valorPrevisto, double valorTotalDoLucro, double valorTotal) {
         this.valorPrevisto = valorPrevisto;
         this.valorTotalDoLucro = valorTotalDoLucro;
