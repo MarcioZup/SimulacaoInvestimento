@@ -1,7 +1,7 @@
 package br.com.zup.SimulacaoInvestimentos.dtos;
 
 public enum RiscoDto {
-    ALTO(0.025) , MEDIO(0.015), BAIXO(0.005);
+    ALTO(1.025) , MEDIO(1.015), BAIXO(1.005);
 
     private double taxaDeRetorno;
 

@@ -7,7 +7,7 @@ public class InvestimentoDto {
     private String nome;
     private String cpf;
     private double valorPrevisto;
-    private int periodoDeAplicacaoMeses;
+    private double periodoDeAplicacaoMeses;
     private RiscoDto risco;
 
 
@@ -54,7 +54,7 @@ public class InvestimentoDto {
     }
 
     public int getPeriodoDeAplicacaoMeses() {
-        return periodoDeAplicacaoMeses;
+        return (int) periodoDeAplicacaoMeses;
     }
 
     public void setPeriodoDeAplicacaoMeses(int periodoDeAplicacaoMeses) {
