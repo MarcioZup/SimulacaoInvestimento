@@ -10,6 +10,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
+@RequestMapping
 public class InvestimentoController {
 
     @Autowired
@@ -17,7 +18,7 @@ public class InvestimentoController {
 
     @PutMapping
     public RetornoInvestimentoDto cadastrarInvestimento(@RequestBody @Valid InvestimentoDto investimentoDto){
-        return investimentoService.calcularInvestimento(InvestimentoDto investimentoDto);
+        return investimentoService.calcularInvestimento(investimentoDto);
     }
 
 }
