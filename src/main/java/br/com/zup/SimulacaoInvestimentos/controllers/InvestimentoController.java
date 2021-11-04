@@ -17,7 +17,7 @@ public class InvestimentoController {
 
     @PutMapping
     public RetornoInvestimentoDto cadastrarInvestimento(@RequestBody @Valid InvestimentoDto investimentoDto){
-        return
+        return investimentoService.calcularInvestimento(InvestimentoDto investimentoDto);
     }
 
 }

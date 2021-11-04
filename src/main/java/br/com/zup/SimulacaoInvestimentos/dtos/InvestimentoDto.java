@@ -1,10 +1,17 @@
 package br.com.zup.SimulacaoInvestimentos.dtos;
 
+import org.hibernate.validator.constraints.br.CPF;
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+
 public class InvestimentoDto {
 
-
+    @Email(message = "Email não é válido")
     private String email;
+    @NotNull(message = "O nome não pode estar vazio")
     private String nome;
+    @CPF(message = "O CPF não é válido")
     private String cpf;
     private double valorPrevisto;
     private double periodoDeAplicacaoMeses;
